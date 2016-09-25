@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ForerunnerInterfaces;
+using ForerunnerReader;
+using ForerunnerWriter;
 
-namespace ForerunnerApp
+namespace ForerunnerApi
 {
     public class Startup
     {
@@ -36,6 +35,13 @@ namespace ForerunnerApp
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
+
+            services.AddOptions();
+
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+            services.AddTransient<IReader, Reader>();
+            services.AddTransient<IWriter, Writer>();
 
             services.AddMvc();
         }

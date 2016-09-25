@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ForerunnerApi.Tests")]
+[assembly: AssemblyProduct("ForerunnerTester")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1fb04429-d55b-48b1-be0c-7498979216ec")]
+[assembly: Guid("2e3b0e95-6852-49e3-a2bc-b5b22ff26b56")]

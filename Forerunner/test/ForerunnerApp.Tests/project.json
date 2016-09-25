@@ -10,7 +10,8 @@
         "ForerunnerApp": "1.0.0-*",
         "NETStandard.Library": "1.6.0",
         "xunit": "2.1.0",
-        "dotnet-test-xunit": "1.0.0-rc2-build10015"
+        "dotnet-test-xunit": "1.0.0-rc2-build10015",
+        "ForerunnerInterfaces": "1.0.0-*"
     },
 
     "frameworks": {
